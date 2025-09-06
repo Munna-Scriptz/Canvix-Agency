@@ -87,3 +87,17 @@
   width: 100%;
   z-index: -1;
 }
+
+/* ---------------------Slider------------------------ */
+/* .cursor-pointer {
+    cursor: pointer;
+    background: #978282;
+    color: white !important;
+    fill: white !important;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
