@@ -20,7 +20,7 @@ const NavbarWhite = () => {
                 </div>
                 {/* ---------------Nav Button----------- */}
                 <div>
-                <button className='bg-second text-borderCol font-dmSans text-lg py-[10px] px-[15px] rounded-full cursor-pointer ContactButtonBlack'>Get in Touch</button>
+                  <button className='bg-second text-borderCol font-dmSans text-lg py-[10px] px-[15px] rounded-full cursor-pointer ContactButtonBlack'>Get in Touch</button>
                 </div>
             </div>
             </div>
