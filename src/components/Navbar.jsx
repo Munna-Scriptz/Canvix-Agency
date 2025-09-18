@@ -8,14 +8,14 @@ const Navbar = () => {
         <div className="container">
           <div id="Nav-Row" className='flex items-center justify-between'>
             {/* ---------------Nav Image----------- */}
-            <div>
+            <Link to={'/'}>
               <img src={logo} alt="Logo" />
-            </div>
+            </Link>
             {/* ---------------Nav Links----------- */}
             <div className='text-[#FBFBFB] font-dmSans text-lg flex items-center gap-[30px]'>
               <Link to={'/'} id='HoverLinks'>Home</Link>
-              <Link to={'/'} id='HoverLinks'>About</Link>
-              <Link to={'/'} id='HoverLinks'>Contact Us</Link>
+              <Link to={'/about'} id='HoverLinks'>About</Link>
+              <Link to={'/contact'} id='HoverLinks'>Contact Us</Link>
             </div>
             {/* ---------------Nav Button----------- */}
             <div>
