@@ -18,3 +18,16 @@
   --color-borderCol: #F4F4F4;
   --color-brandGrey: #DFDFDF;
 }
+/* ---------------Animations------------------- */
+@theme {
+  --animate-wiggle: wiggle 5s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+  }
+}
