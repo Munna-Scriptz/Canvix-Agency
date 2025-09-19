@@ -12,11 +12,11 @@ const Banner = () => {
     <>
     <section id='Banner'>
         <div className="container">
-            <div id="Banner-Row" className='flex items-center justify-between'>
+            <div id="Banner-Row" className='flex lg:flex-row flex-col items-center justify-between lg:pt-0 pt-8'>
                 {/* ---------------Banner Text----------------- */}
-                <div className='w-[609px]'>
-                    <h1 className='font-roboto font-semibold text-[54px] text-[#FBFBFB] leading-[120%]'>Ready to take your <span className='text-brand'>Business Growth</span> to the next level?</h1>
-                    <p className='text-[#FBFBFB] font-dmSans text-lg w-[557px] mt-[24px] mb-[32px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
+                <div className='lg:w-[609px]'>
+                    <h1 className='font-roboto font-semibold lg:text-[54px] text-[32px] text-[#FBFBFB] lg:leading-[120%] leading-[130%]'>Ready to take your <span className='text-brand'>Business Growth</span> to the next level?</h1>
+                    <p className='text-[#FBFBFB] font-dmSans lg:text-lg text-sm lg:w-[557px] mt-[24px] mb-[32px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
                     {/* ----------Start Button----------- */}
                     <CommonButton/>
                 </div>
@@ -26,13 +26,13 @@ const Banner = () => {
                 </div>
             </div>
             {/* ---------------Brands---------------- */}
-            <div className='mt-[46px]'>
+            <div className='lg:mt-[46px] mt-[30px]'>
                 <p className='font-roboto font-semibold text-xl text-brand ml-4 mb-2'>Trusted by Leading Brands</p>
-                <div className='flex'>
-                    <img src={brand1} alt="brands" />
-                    <img src={brand2} alt="brands" />
-                    <img src={brand3} alt="brands" />
-                    <img src={brand4} alt="brands" />
+                <div className='flex items-center flex-wrap'>
+                    <img className='lg:w-auto w-[160px]' src={brand1} alt="brands" />
+                    <img className='lg:w-auto w-[160px]' src={brand2} alt="brands" />
+                    <img className='lg:w-auto w-[160px]' src={brand3} alt="brands" />
+                    <img className='lg:w-auto w-[160px]' src={brand4} alt="brands" />
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 const Navbar = () => {
   return (
     <>
-      <nav className='bg-transparent py-[22px]'>
+      <nav className='bg-transparent py-[22px] lg:block hidden'>
         <div className="container">
           <div id="Nav-Row" className='flex items-center justify-between'>
             {/* ---------------Nav Image----------- */}
