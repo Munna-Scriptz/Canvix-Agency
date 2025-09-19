@@ -13,7 +13,7 @@ const Reviews = () => {
       return (
         <div
           onClick={onClick}
-          className="absolute right-[565px] bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary flex items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+          className="absolute right-[565px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
         >
           <TfiAngleRight size={20} />
         </div>
@@ -25,7 +25,7 @@ const Reviews = () => {
       return (
         <div
           onClick={onClick}
-          className="absolute left-[573px] bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary flex items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+          className="absolute lg:left-[573px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
         >
           <TfiAngleLeft size={20}/>
         </div>
@@ -72,12 +72,12 @@ const Reviews = () => {
                             {
                                 SliderReviews.map((item , key)=>(
                                     <div>
-                                        <div key={key} className='bg-borderCol rounded-[20px] p-[45px] pb-[100px] flex items-center flex-col'>
+                                        <div key={key} className='bg-borderCol rounded-[20px] lg:p-[45px] p-[24px] lg:pb-[100px] pb-[40px] flex items-center flex-col'>
                                             <img className='w-[150px] h-[150px] rounded-full' src={item.image} alt="Reviewer Image" />
-                                            <p className='font-roboto font-bold text-2xl text-center my-[35px] text-primary'>{item.message}</p>
+                                            <p className='font-roboto font-bold lg:text-2xl text-lg text-center my-[35px] text-primary'>{item.message}</p>
                                             <div>
-                                                <h2 className='font-roboto font-semibold text-xl text-primary text-center'>{item.name}</h2>
-                                                <p className='font-dmSans text-center text-[#0C0C0CE5] mt-1 '>{item.position}</p>
+                                                <h2 className='font-roboto font-semibold lg:text-xl text-base text-primary text-center'>{item.name}</h2>
+                                                <p className='font-dmSans text-center lg:text-base text-sm text-[#0C0C0CE5] mt-1 '>{item.position}</p>
                                             </div>
                                         </div>
                                     </div>

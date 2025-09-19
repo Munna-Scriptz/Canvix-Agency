@@ -26,7 +26,7 @@ const ResNavbarWhite = () => {
         {/* ------Button Menu------ */}
         <div className={`absolute top-0 left-0 w-full h-screen duration-[.3s]  ${Value? 'z-[-10]' : 'z-[40]'}`}>
             <div onClick={()=>SetValue(!Value)} className={`w-full h-screen duration-[.3s] absolute top-0 left-0 bg-[#00000070] ${Value? 'hidden' : 'visible'}`}></div>
-            <div className={`h-screen w-[60%] absolute top-0 bg-[#131022] p-5 duration-[.8s] shadow-[0_3px_10px_rgb(0,0,0,0.2)] overflow-hidden z-50 ${Value? ' translate-x-[-520px] md:translate-x-[-740px] ' : ' translate-x-[-0px]'}`}>
+            <div className={`h-screen w-[60%] absolute top-0 bg-primary p-5 duration-[.8s] shadow-[0_3px_10px_rgb(0,0,0,0.2)] overflow-hidden z-50 ${Value? ' translate-x-[-520px] md:translate-x-[-740px] ' : ' translate-x-[-0px]'}`}>
                 <div className='flex items-center justify-between absolute top-0 right-0 w-full px-4 mt-[25px]'>
                     <Link to={'/'} className='w-[100px]'><img src={Logo2} alt="Logo" /></Link>
                     <button className='relative w-[32px] h-[28px] cursor-pointer right-0' onClick={()=>SetValue(!Value)}>

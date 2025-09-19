@@ -14,15 +14,15 @@ const Recent = () => {
             <div className="container">
                 <div id="Recent-Row">
                     {/* -----------------Header----------------- */}
-                    <h2 className='text-center font-roboto font-semibold text-[54px] text-primary'>Recent Showcase</h2>
+                    <h2 className='text-center font-roboto font-semibold lg:text-[54px] text-[36px] text-primary lg:mb-0 mb-10'>Recent Showcase</h2>
                     {/* -----------------ShowCase Images----------------- */}
-                    <div className='flex items-center justify-between'>
-                        <div className='flex flex-col gap-[58px]'>
+                    <div className='flex lg:flex-row flex-col items-center justify-between'>
+                        <div className='flex flex-col lg:gap-[58px] gap-[32px]'>
                             <ShowcaseSingle image={showcase1} topText={'Web UI design'} bottomText={'Creative  UI design'}/>
                             <ShowcaseSingle image={showcase2} topText={'UI design'} bottomText={'Creative Rebranding for logo'}/>
                         </div>
-                        <div className='mt-[172px] flex flex-col items-end'>
-                            <button className="relative bg-primary text-white font-medium text-[17px] px-5 py-[12px] pl-5 h-[48px] rounded-full flex items-center overflow-hidden cursor-pointer group">
+                        <div className='lg:mt-[172px] flex lg:flex-col flex-col-reverse lg:items-end'>
+                            <button className="relative lg:mt-0 mt-10 bg-primary text-white font-medium text-[17px] px-5 py-[12px] pl-5 h-[48px] rounded-full flex items-center overflow-hidden cursor-pointer group">
                                 <div className="absolute left-[0.3em] bg-borderCol text-primary h-[2.2em] w-[2.2em] rounded-full flex items-center justify-center duration-[.3s] group-hover:w-[calc(100%-0.6em)] active:scale-95">
                                     <IoIosArrowForward />
                                 </div>

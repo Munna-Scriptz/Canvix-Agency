@@ -10,7 +10,7 @@ const Footer = () => {
     <>
         <footer className='mt-[112px] bg-primary pt-[100px]'>
             <div className="container">
-                <div id="Footer-Row" className='flex items-start justify-between'>
+                <div id="Footer-Row" className='flex flex-wrap md:gap-0 gap-15  items-start justify-between'>
                     {/* ---------------------First Row------------------------- */}
                     <div>
                         <Link to={'/'}><img className='w-[200px]' src={logo} alt="Logo" /></Link>
@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* --------------------------Bottom Header------------------------ */}
-                <div id='Footer-Second-row' className='border-t border-borderCol mt-[100px] pt-[30px] pb-[60px] flex items-center justify-between'>
+                <div id='Footer-Second-row' className='border-t border-borderCol mt-[100px] pt-[30px] pb-[60px] flex flex-wrap md:gap-0 gap-10 items-center justify-between'>
                     <div>
                         <h2 className='font-roboto font-semibold text-xl text-borderCol'>Copyright by</h2>
                         <p className='font-dmSans text-xl text-borderCol mt-[16px]'>Designed by Munna-Scriptz</p>

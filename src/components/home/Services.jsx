@@ -18,7 +18,7 @@ const Services = () => {
                     <CommonHead topText={'Our Services '} BottomText={'High-impact services for your business'}/>
 
                     {/* ---------------Service Cards------------- */}
-                    <div className='mt-[80px] flex items-center flex-wrap justify-between gap-y-[80px]'>
+                    <div className='mt-[80px] flex items-center flex-wrap justify-between lg:gap-y-[80px] gap-y-[20px]'>
                         <SingleServiceCard Icon={<BiPencil />} topText={'Content Marketing'} bottomText={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
                         <SingleServiceCard Icon={<LuPenTool />} topText={'Graphic Design '} bottomText={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
                         <SingleServiceCard Icon={<GrAnnounce />} topText={'Digital Marketing '} bottomText={`Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing`}/>
