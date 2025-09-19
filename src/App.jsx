@@ -5,6 +5,7 @@ import LayoutOne from './layout/LayoutOne'
 import Home from './pages/Home'
 import About from './pages/About'
 import LayoutTwo from './layout/LayoutTwo'
+import Contact from './pages/Contact'
 
 const App = () => {
   const MyRoute = createBrowserRouter(createRoutesFromElements(
@@ -13,8 +14,9 @@ const App = () => {
         <Route index element={<Home/>}></Route>
       </Route>
       
-      <Route path='/about' element={<LayoutTwo/>}>
-        <Route index element={<About/>}></Route>
+      <Route element={<LayoutTwo/>}>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
       </Route>
     </Route>
   ))
