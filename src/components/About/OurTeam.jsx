@@ -31,9 +31,9 @@ const OurTeam = () => {
             <div className="container">
                 <div id="Our-team-Row">
                     {/* -------------------------Header---------------------------- */}
-                    <h2 className='text-center text-primary text-[64px] font-semibold font-roboto mb-[60px]'>Our Team</h2>
+                    <h2 className='text-center text-primary lg:text-[64px] text-[36px] font-semibold font-roboto mb-[60px]'>Our Team</h2>
                     {/* -------------------------Cards---------------------------- */}
-                    <div className='flex items-center justify-between gap-[74px]'>
+                    <div className='flex lg:flex-nowrap flex-wrap items-center justify-between lg:gap-[74px] gap-[52px]'>
                         {
                             memberData.map((item , i)=>(
                                 <div key={i} className='relative'>

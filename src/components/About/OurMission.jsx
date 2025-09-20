@@ -56,7 +56,7 @@ const OurMission = () => {
                         <div className='relative'>
                             <img src={mission1} alt="Image" />
                             <div className='flex animate-wiggle items-center mt-[20px] lg:mb-0 mb-10'>
-                                <div className='w-[167px] lg:ml-[35px]'>
+                                <div className='lg:w-[167px] lg:ml-[35px]'>
                                     <h2 className='text-white font-roboto lg:text-[42px] text-[24px] font-bold text-center'>10k</h2>
                                     <p className='text-borderCol font-dmSans lg:mt-[16px] mt-[12px] lg:text-base text-sm text-center'>Great conversations per month</p>
                                 </div>
@@ -67,7 +67,7 @@ const OurMission = () => {
                                 </div>
                                 {/* ------Border----- */}
 
-                                <div className='w-[167px] mt-[90px]'>
+                                <div className='lg:w-[167px] mt-[90px]'>
                                     <h2 className='text-white font-roboto lg:text-[42px] text-[24px] font-bold text-center'>95+</h2>
                                     <p className='text-borderCol font-dmSans lg:mt-[16px] mt-[12px] lg:text-base text-sm text-center'>Project Complete </p>
                                 </div>
