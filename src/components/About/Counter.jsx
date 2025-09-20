@@ -22,10 +22,10 @@ const Counter = () => {
     <>
         <section id='Counter' className='mt-[101px]'>
             <div className="container">
-                <div id="Counter-Row" className='flex items-center justify-center gap-[66px]'>
+                <div id="Counter-Row" className='flex flex-wrap xl:flex-nowrap items-center justify-center gap-[66px]'>
                     {
                         CounterData.map((item , idx)=>(
-                            <div key={idx} className='w-[422px] flex flex-col items-center'>
+                            <div key={idx} className='max-w-[422px] flex flex-col items-center'>
                                 <h2 className='text-primary font-roboto font-semibold text-[45px]'>{item.number}</h2>
                                 <p className='text-primary font-dmSans font-medium text-[25px] mt-4 mb-5'>{item.name}</p>
                                 <p className='text-[#0C0C0CE5] font-dmSans tracking-[3%] font-normal text-[18px] text-center'>{item.details}</p>
