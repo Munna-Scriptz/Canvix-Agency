@@ -8,86 +8,86 @@ import Slider from 'react-slick';
 import { TfiAngleLeft, TfiAngleRight } from 'react-icons/tfi';
 
 const Reviews = () => {
-    function NextArrow(props) {
-      const { onClick } = props;
-      return (
-        <div
-          onClick={onClick}
-          className="absolute right-[565px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
-        >
-          <TfiAngleRight size={20} />
-        </div>
-      );
-    }
-    
-    function PrevArrow(props) {
-      const { onClick } = props;
-      return (
-        <div
-          onClick={onClick}
-          className="absolute lg:left-[573px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
-        >
-          <TfiAngleLeft size={20}/>
-        </div>
-      );
-    }
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
+  function NextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        onClick={onClick}
+        className="absolute right-[565px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+      >
+        <TfiAngleRight size={20} />
+      </div>
+    );
+  }
 
-    const SliderReviews = [
-        {
-            image : reviewImg1,
-            message : '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
-            name : 'Sarah Taylor',
-            position : 'CEO, Webecy Digital'
-        },
-        {
-            image : reviewImg2,
-            message : '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
-            name : 'Eren Yeager',
-            position : 'CEO, Webecy Digital'
-        },
-        {
-            image : reviewImg3,
-            message : '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
-            name : 'Sarah Taylor',
-            position : 'CEO, Webecy Digital'
-        },
-    ]
+  function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        onClick={onClick}
+        className="absolute lg:left-[573px] md:flex hidden bottom-[35px] cursor-pointer z-10 w-[45px] h-[45px] text-primary border-1 border-primary items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+      >
+        <TfiAngleLeft size={20} />
+      </div>
+    );
+  }
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  const SliderReviews = [
+    {
+      image: reviewImg1,
+      message: '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
+      name: 'Sarah Taylor',
+      position: 'CEO, Webecy Digital'
+    },
+    {
+      image: reviewImg2,
+      message: '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
+      name: 'Eren Yeager',
+      position: 'CEO, Webecy Digital'
+    },
+    {
+      image: reviewImg3,
+      message: '“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”',
+      name: 'Sarah Taylor',
+      position: 'CEO, Webecy Digital'
+    },
+  ]
 
   return (
     <>
-        <section id='Reviews' className='my-[112px]'>
-            <div className="container">
-                <div id="Reviews-Row">
-                    <div className="slider-container">
-                        <Slider {...settings}>
-                            {
-                                SliderReviews.map((item , key)=>(
-                                    <div>
-                                        <div key={key} className='bg-borderCol rounded-[20px] lg:p-[45px] p-[24px] lg:pb-[100px] pb-[40px] flex items-center flex-col'>
-                                            <img className='w-[150px] h-[150px] rounded-full' src={item.image} alt="Reviewer Image" />
-                                            <p className='font-roboto font-bold lg:text-2xl text-lg text-center my-[35px] text-primary'>{item.message}</p>
-                                            <div>
-                                                <h2 className='font-roboto font-semibold lg:text-xl text-base text-primary text-center'>{item.name}</h2>
-                                                <p className='font-dmSans text-center lg:text-base text-sm text-[#0C0C0CE5] mt-1 '>{item.position}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </Slider>
+      <section id='Reviews' className='my-[112px]'>
+        <div className="container">
+          <div id="Reviews-Row">
+            <div className="slider-container">
+              <Slider {...settings}>
+                {
+                  SliderReviews.map((item, key) => (
+                    <div>
+                      <div key={key} className='bg-borderCol rounded-[20px] lg:p-[45px] p-[24px] lg:pb-[100px] pb-[40px] flex items-center flex-col'>
+                        <img className='w-[150px] h-[150px] rounded-full' src={item.image} alt="Reviewer Image"  data-aos="fade-up"/>
+                        <p className='font-roboto font-bold lg:text-2xl text-lg text-center my-[35px] text-primary' data-aos="fade-up">{item.message}</p>
+                        <div>
+                          <h2 className='font-roboto font-semibold lg:text-xl text-base text-primary text-center' data-aos="fade-up">{item.name}</h2>
+                          <p className='font-dmSans text-center lg:text-base text-sm text-[#0C0C0CE5] mt-1 ' data-aos="fade-up">{item.position}</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  ))
+                }
+              </Slider>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

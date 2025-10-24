@@ -3,7 +3,7 @@ import React from 'react'
 const Location = () => {
   return (
     <>
-        <section id='Location' className='mt-[100px]'>
+        <section id='Location' className='mt-[100px]' data-aos="fade-up">
             <div className="container">
                 <div id="Location-Row" className='rounded-[20px]'>
                   <div className="relative w-full h-[314px] rounded-[20px] overflow-hidden">

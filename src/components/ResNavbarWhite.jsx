@@ -14,11 +14,11 @@ const ResNavbarWhite = () => {
     <nav className='lg:hidden block z-50 py-[12px]'>
         <div className="container">
             <div id="NavBar_Row" className='py-[20px] flex items-center justify-between' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <div className='w-[110px]'>
+                <div className='w-[110px]' data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1000">
                     <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
                 </div>
                 {/* -----------Nav button--------  */}
-                <div className='flex items-center gap-5 text-2xl text-primary'>
+                <div className='flex items-center gap-5 text-2xl text-primary' data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1400">
                     <FaBarsStaggered onClick={()=>SetValue(!Value)} className='cursor-pointer'/>
                 </div>
             </div>

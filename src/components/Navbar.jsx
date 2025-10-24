@@ -9,16 +9,16 @@ const Navbar = () => {
           <div id="Nav-Row" className='flex items-center justify-between'>
             {/* ---------------Nav Image----------- */}
             <Link to={'/'}>
-              <img src={logo} alt="Logo" />
+              <img src={logo} alt="Logo" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="800"/>
             </Link>
             {/* ---------------Nav Links----------- */}
             <div className='text-[#FBFBFB] font-dmSans text-lg flex items-center gap-[30px]'>
-              <Link to={'/'} id='HoverLinks'>Home</Link>
-              <Link to={'/about'} id='HoverLinks'>About</Link>
-              <Link to={'/contact'} id='HoverLinks'>Contact Us</Link>
+              <Link to={'/'} id='HoverLinks' data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1000">Home</Link>
+              <Link to={'/about'} id='HoverLinks' data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1200">About</Link>
+              <Link to={'/contact'} id='HoverLinks' data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1400">Contact Us</Link>
             </div>
             {/* ---------------Nav Button----------- */}
-            <div>
+            <div data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1800">
               <button className='bg-white text-primary font-dmSans text-lg py-[10px] px-[15px] rounded-full cursor-pointer ContactButton'>Get in Touch</button>
             </div>
           </div>

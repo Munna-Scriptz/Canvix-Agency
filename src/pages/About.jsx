@@ -8,11 +8,11 @@ import EnoughTalk from '../components/common/EnoughTalk'
 const About = () => {
   return (
     <>
-        <AboutBanner/>
-        <Counter/>
-        <OurMission/>
-        <OurTeam/>
-        <EnoughTalk/>
+      <AboutBanner />
+      <Counter />
+      <OurMission />
+      <OurTeam />
+      <EnoughTalk />
     </>
   )
 }

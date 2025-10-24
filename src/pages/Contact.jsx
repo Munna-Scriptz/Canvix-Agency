@@ -5,8 +5,8 @@ import Location from '../components/Contact/Location'
 const Contact = () => {
   return (
     <>
-        <LetsTalk/>
-        <Location/>
+      <LetsTalk />
+      <Location />
     </>
   )
 }
